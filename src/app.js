@@ -13,6 +13,7 @@ const subjectRoutes = require('./routes/subject.routes');
 const roomRoutes = require('./routes/room.routes');
 const timetableRoutes = require('./routes/timetable.routes');
 const professorRoutes = require('./routes/professor.routes');
+const profileRoutes = require('./routes/profile.routes');
 
 // Create Express app
 const app = express();
@@ -33,6 +34,7 @@ app.use('/api/subjects', subjectRoutes);
 app.use('/api/rooms', roomRoutes);
 app.use('/api/timetable', timetableRoutes);
 app.use('/api/professors', professorRoutes);
+app.use('/api/profile', profileRoutes);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
